@@ -10,7 +10,7 @@ load_dotenv()
 logging.basicConfig(level=logging.INFO)
 
 # Secret key for authentication
-SERVER_SECRET = "s3cr3tK3yExAmpl3SecReT"
+SERVER_SECRET = os.getenv('SERVER_SECRET')
 
 
 
